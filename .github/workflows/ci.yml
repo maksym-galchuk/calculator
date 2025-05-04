@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [opened, edited, reopened, synchronize, review_requested, submitted]
     branches:
-      - develop
+      - main
 
 jobs:
   build:
