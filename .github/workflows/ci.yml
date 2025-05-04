@@ -42,6 +42,10 @@ jobs:
 
   review-check:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      repository-projects: write
     steps:
       - name: Перевірка наявності схваленого код-рев'ю
         uses: actions/github-script@v6
