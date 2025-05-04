@@ -81,7 +81,7 @@ jobs:
             cat cloc-report.txt
 
       - name: Upload Cloc report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cloc-report
           path: cloc-report.txt
