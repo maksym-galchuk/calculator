@@ -80,11 +80,11 @@ jobs:
             cloc src/ > cloc-report.txt
             cat cloc-report.txt
 
-            - name: Upload Cloc report
-              uses: actions/upload-artifact@v3
-              with:
-                name: cloc-report
-                path: cloc-report.txt
+      - name: Upload Cloc report
+        uses: actions/upload-artifact@v3
+        with:
+          name: cloc-report
+          path: cloc-report.txt
 
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v5
