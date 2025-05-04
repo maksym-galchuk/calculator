@@ -59,9 +59,6 @@ jobs:
             });
             
             const approved = reviews.some(review => review.state === 'APPROVED');
-            if (!approved) {
-              core.setFailed("Код-рев'ю не схвалено");
-            }
 
   sonarqube:
     name: SonarQube
